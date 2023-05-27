@@ -1,12 +1,14 @@
 {
-  "name": "core",
+  "name": "deeplx.js",
   "version": "0.0.1",
-  "description": "",
+  "description": "A Node.js port of DeepLX",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "private": true,
-  "keywords": [],
+  "private": false,
+  "keywords": [
+    "deeplx"
+  ],
   "files": [
     "dist"
   ],
@@ -14,24 +16,28 @@
     "require": "./dist/index.js",
     "import": "./dist/index.mjs"
   },
-  "bin": {
-    "core-cli": "dist/bin/index.js"
-  },
   "scripts": {
     "build:debug": "tsup --config tsup.debug.ts",
     "build": "tsup --config tsup.config.ts"
   },
-  "homepage": "https://github.com/jufuku-haijo/ts-lib-starter",
+  "homepage": "https://github.com/cijiugechu/deeplx.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:jufuku-haijo/ts-lib-starter.git"
+    "url": "git@github.com:cijiugechu/deeplx.js.git"
   },
-  "bugs": "https://github.com/jufuku-haijo/ts-lib-starter/issues",
+  "bugs": "https://github.com/cijiugechu/deeplx.js/issues",
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.11.18",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4"
+  },
+  "engines": {
+    "node": ">=14.0"
+  },
+  "dependencies": {
+    "p-limit": "^4.0.0",
+    "undici": "^5.22.1"
   }
 }

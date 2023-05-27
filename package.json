@@ -1,5 +1,5 @@
 {
-  "name": "ts-lib-starter",
+  "name": "deeplx.js-monorepo",
   "version": "0.0.0",
   "author": "nemurubaka",
   "private": true,
@@ -27,8 +27,6 @@
   "scripts": {
     "format": "prettier --write . --ignore-unkown",
     "build": "pnpm --filter core run build",
-    "test": "vitest",
-    "test:watch": "vitest -w",
     "prepublishOnly": "pnpm run build"
   },
   "license": "MIT",

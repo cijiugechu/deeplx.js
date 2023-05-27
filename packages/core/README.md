@@ -48,7 +48,7 @@ export interface DeepLXOptions {
 
 ## Example
 
-see [example.mjs](./packages/playground/example.mjs)
+see [example.mjs](../playground/example.mjs)
 
 ## License
 
