@@ -13,7 +13,7 @@ pnpm add deeplx.js
 ## Usage
 
 ```js
-import { translate } from 'deeplx.js'
+import { translate, TooManyRequestsError } from 'deeplx.js'
 
 const run = () => {
   translate({
