@@ -25,6 +25,9 @@ importers:
       undici:
         specifier: ^5.22.1
         version: 5.22.1
+      whichlang-node:
+        specifier: ^0.1.1
+        version: 0.1.1
     devDependencies:
       '@types/node':
         specifier: ^18.11.18
@@ -1594,6 +1597,142 @@ packages:
     dependencies:
       isexe: 2.0.0
     dev: true
+
+  /whichlang-node-android-arm-eabi@0.1.1:
+    resolution: {integrity: sha512-Dy2tVB5tNw5lCTPjLUpZ5dPaNU9QRiumMJxERMmT/tsVNat0MZj9yfIVwmH0DfftDnIYP7vEh3+eVDFo7OvbKQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm]
+    os: [android]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /whichlang-node-android-arm64@0.1.1:
+    resolution: {integrity: sha512-F5QNz7Bw/mGucOju9SXKPn1Vi108SFNqk/UQVHrHfkyzIVse6CD5z6V8C6jFCbrmf7J8kaWHp2DdXP3tM6f47w==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [android]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /whichlang-node-darwin-arm64@0.1.1:
+    resolution: {integrity: sha512-qpoAH4JtcTFTl3aRug+p8XsIbWqNWr5RHrvgNQSVdYuLOz9+jpKQvXwLb3TlqZirzvoSCuc06owV3NZhjgwHWQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /whichlang-node-darwin-x64@0.1.1:
+    resolution: {integrity: sha512-Uvc3YAkSNBVTEFJ1HqcpiZvr+vB8U5+FJM5lBRZS2Jt2S4+kQVmLCVYLiQOvDCxrHKf1JGG0YQndZL5a9qvrkg==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /whichlang-node-freebsd-x64@0.1.1:
+    resolution: {integrity: sha512-Ztw/w5jnld97VKSUd96LRGu54w06ijZPzkeR075+hhcjACrSQOtKYyJmAC7edvIBBE6kt0SfUzlQTnw/nrW0eg==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [freebsd]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /whichlang-node-linux-arm-gnueabihf@0.1.1:
+    resolution: {integrity: sha512-QIAeDWYy03RxdeSy1wEBv5UUr5bg8ErgKfZLBR56ROdsqD+MNlNqHUWkJaS9R5beK1v5p3xCJkrjHezfkQTzyg==}
+    engines: {node: '>= 10'}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /whichlang-node-linux-arm64-gnu@0.1.1:
+    resolution: {integrity: sha512-mqnpTVeeJI4g9XA1wN0jFjH/YdX4CuCSU2661p8MuWkUKSYnNXjPhPQDETAXbYqcJi69LpHTH4UtqBc6fqynNw==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /whichlang-node-linux-arm64-musl@0.1.1:
+    resolution: {integrity: sha512-ZmoSsB2NTZfxGYzKdugiyylqzJg1e5jv0ofsHfBgxNH+rcpI+FdRs6p+RPrjp2q4wzVsqsjf0T5AbZtV81Kzhw==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /whichlang-node-linux-x64-gnu@0.1.1:
+    resolution: {integrity: sha512-+ezXCZxvZ/kdR1EyktSdQp+Gp7DNUXYd39xVdQu/xrX4Q74kYSHuWQapX5gS2pkWGI262WaKQHHvSc4UN+9b+A==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /whichlang-node-linux-x64-musl@0.1.1:
+    resolution: {integrity: sha512-cpo7tl7CpJ4XliJNN82EqQWPPLD8uukAHgaSRv64RuOAGYXnGogeqyUIophayOAuWb77r+XDfJvnixpiGGijcQ==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /whichlang-node-win32-arm64-msvc@0.1.1:
+    resolution: {integrity: sha512-XqJPiHKCYeh68gX0G1BhW4PdUY271tieH1PW2nXA0E6nEKmsWv4RG7bsWtPAyQfk8Zyh1oXJdHjaeIkW3888NA==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /whichlang-node-win32-ia32-msvc@0.1.1:
+    resolution: {integrity: sha512-4gwRbPmS01+jQtn7hqqCXBjLt3fXccU4AJMpr1SgddPYCgBReJOK+1LwpYvyoqWgPuvNFagbE7Zo1o1v/m2W+A==}
+    engines: {node: '>= 10'}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /whichlang-node-win32-x64-msvc@0.1.1:
+    resolution: {integrity: sha512-9TXzM3UmergYbvP1uo6FyXQ76aoFrZ0GLp5KWEC9MyNgMFHk87aJRy8HyiHY37MXPR3B0kXjIo0YuShaakiCqw==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /whichlang-node@0.1.1:
+    resolution: {integrity: sha512-YgPm52/wW2ZZG4Q27k7zPvmtBcrHQn2MkhCw4EB2NmRqIWcp3g2tU1SWuQL2C6ajlaLWhWV0zeX1gsK+GwWLhQ==}
+    engines: {node: '>= 10'}
+    optionalDependencies:
+      whichlang-node-android-arm-eabi: 0.1.1
+      whichlang-node-android-arm64: 0.1.1
+      whichlang-node-darwin-arm64: 0.1.1
+      whichlang-node-darwin-x64: 0.1.1
+      whichlang-node-freebsd-x64: 0.1.1
+      whichlang-node-linux-arm-gnueabihf: 0.1.1
+      whichlang-node-linux-arm64-gnu: 0.1.1
+      whichlang-node-linux-arm64-musl: 0.1.1
+      whichlang-node-linux-x64-gnu: 0.1.1
+      whichlang-node-linux-x64-musl: 0.1.1
+      whichlang-node-win32-arm64-msvc: 0.1.1
+      whichlang-node-win32-ia32-msvc: 0.1.1
+      whichlang-node-win32-x64-msvc: 0.1.1
+    dev: false
 
   /why-is-node-running@2.2.2:
     resolution: {integrity: sha512-6tSwToZxTOcotxHeA+qGCq1mVzKR3CwcJGmVcY+QE8SHy6TnpFnh8PAvPNHYr7EcuVeG0QSMxtYCuO1ta/G/oA==}

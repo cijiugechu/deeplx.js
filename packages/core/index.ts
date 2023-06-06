@@ -1,8 +1,9 @@
 import { ProxyAgent, fetch } from 'undici'
 import pLimit from 'p-limit'
 import type { DeepLXOptions } from './types'
-import { headers, deeplApi, maxConcurrentRequests } from './constants'
+import { headers, deeplApi, maxConcurrentRequests, toISO6391 } from './constants'
 import { TooManyRequestsError } from './error'
+import { Language, detectLang } from 'whichlang-node'
 
 const getTimeStamp = (content: string) => {
   const iCount = content.split('').reduce((prev, curr) => {
@@ -26,13 +27,15 @@ const request = (options: DeepLXOptions) => {
   const {
     content,
     targetLang = 'EN',
-    sourceLang = 'ZH',
+    sourceLang,
     needAlternative = false,
     proxy,
   } = options
 
   const id = getRandomNumber()
   const timestamp = getTimeStamp(content)
+  const detectedSourceLang = detectLang(content) as Language
+  const iso6391Representation = toISO6391(detectedSourceLang)
 
   const requestBody = {
     jsonrpc: '2.0',
@@ -47,7 +50,7 @@ const request = (options: DeepLXOptions) => {
       ],
       splitting: 'newlines',
       lang: {
-        source_lang_user_selected: sourceLang,
+        source_lang_user_selected: sourceLang ?? iso6391Representation,
         target_lang: targetLang,
       },
       timestamp: timestamp,
